@@ -6,6 +6,8 @@ first edit in develop
 
 2. edit in experimental
 
+Added conflict on purposer
+
 Test to see diff tool in action
 
 
