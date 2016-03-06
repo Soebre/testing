@@ -8,3 +8,8 @@ Test.exe: Main.o
 Main.o: Main.cpp
 	g++ -c Main.cpp -o Main.o
 
+clean:
+	del *.o
+	del *.exe
+
+
