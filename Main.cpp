@@ -56,6 +56,13 @@ int main(int argc, char* argv[])
 	}
 	printf("\n");
 
+	FILE* pFile = fopen("Test_Result.txt", "w");
+	if(pFile)
+	{
+		fprintf(pFile, "TEST: OK\n");
+		fclose(pFile);
+	}
+
 	return 0;
 }
 
