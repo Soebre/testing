@@ -65,6 +65,9 @@ int main(int argc, char* argv[])
 		fprintf(pFile, "    <testcase classname=\"foo3\" name=\"AFailingTest\">\n");
 		fprintf(pFile, "        <failure type=\"NotEnoughFoo\"> details about failure </failure>\n");
 		fprintf(pFile, "    </testcase>\n");
+		fprintf(pFile, "    <testcase classname=\"foo4\" name=\"MoreFailingTest\">\n");
+		fprintf(pFile, "        <failure type=\"Typo\"> This fails also, what a mess </failure>\n");
+		fprintf(pFile, "    </testcase>\n");
 		fprintf(pFile, "</testsuite>\n");
 		fclose(pFile);
 	}
