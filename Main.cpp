@@ -56,12 +56,20 @@ int main(int argc, char* argv[])
 	}
 	printf("\n");
 
-	FILE* pFile = fopen("Test_Result.txt", "w");
+	FILE* pFile = fopen("Test_Result.xml", "w");
 	if(pFile)
 	{
-		fprintf(pFile, "TEST: OK\n");
+		fprintf(pFile, "<testsuite tests=\"3\">\n");
+		fprintf(pFile, "    <testcase classname=\"foo1\" name=\"ASuccessfulTest\"/>\n");
+		fprintf(pFile, "    <testcase classname=\"foo2\" name=\"AnotherSuccessfulTest\"/>\n");
+		fprintf(pFile, "    <testcase classname=\"foo3\" name=\"AFailingTest\">\n");
+		fprintf(pFile, "        <failure type=\"NotEnoughFoo\"> details about failure </failure>\n");
+		fprintf(pFile, "    </testcase>\n");
+		fprintf(pFile, "</testsuite>\n");
 		fclose(pFile);
 	}
+
+
 
 	return 0;
 }
