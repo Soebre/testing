@@ -59,7 +59,7 @@ int main(int argc, char* argv[])
 	FILE* pFile = fopen("Test_Result.xml", "w");
 	if(pFile)
 	{
-		fprintf(pFile, "<testsuite tests=\"3\">\n");
+		fprintf(pFile, "<testsuite tests=\"4\">\n");
 		fprintf(pFile, "    <testcase classname=\"foo1\" name=\"ASuccessfulTest\"/>\n");
 		fprintf(pFile, "    <testcase classname=\"foo2\" name=\"AnotherSuccessfulTest\"/>\n");
 		fprintf(pFile, "    <testcase classname=\"foo3\" name=\"AFailingTest\">\n");
