@@ -59,16 +59,28 @@ int main(int argc, char* argv[])
 	FILE* pFile = fopen("Test_Result.xml", "w");
 	if(pFile)
 	{
-		fprintf(pFile, "<testsuite tests=\"4\">\n");
-		fprintf(pFile, "    <testcase classname=\"foo1\" name=\"ASuccessfulTest\"/>\n");
-		fprintf(pFile, "    <testcase classname=\"foo2\" name=\"AnotherSuccessfulTest\"/>\n");
-		fprintf(pFile, "    <testcase classname=\"foo3\" name=\"AFailingTest\">\n");
+		fprintf(pFile, "<testsuites>\n");
+		fprintf(pFile, "<testsuite name=\"c5.Foo\" tests=\"4\">\n");
+		fprintf(pFile, "    <testcase classname=\"c5.foo1\" name=\"ASuccessfulTest\"/>\n");
+		fprintf(pFile, "    <testcase classname=\"c5.foo2\" name=\"AnotherSuccessfulTest\"/>\n");
+		fprintf(pFile, "    <testcase classname=\"c5.foo3\" name=\"AFailingTest\">\n");
 		fprintf(pFile, "        <failure type=\"NotEnoughFoo\"> details about failure </failure>\n");
 		fprintf(pFile, "    </testcase>\n");
-		fprintf(pFile, "    <testcase classname=\"foo4\" name=\"MoreFailingTest\">\n");
+		fprintf(pFile, "    <testcase classname=\"c5.foo4\" name=\"MoreFailingTest\">\n");
 		fprintf(pFile, "        <failure type=\"Typo\"> This fails also, what a mess </failure>\n");
 		fprintf(pFile, "    </testcase>\n");
 		fprintf(pFile, "</testsuite>\n");
+		fprintf(pFile, "<testsuite name=\"c5.Bar\" tests=\"4\">\n");
+		fprintf(pFile, "    <testcase classname=\"c5.foo1\" name=\"ASuccessfulTest\"/>\n");
+		fprintf(pFile, "    <testcase classname=\"c5.foo2\" name=\"AnotherSuccessfulTest\"/>\n");
+		fprintf(pFile, "    <testcase classname=\"c5.foo3\" name=\"AFailingTest\">\n");
+		fprintf(pFile, "        <failure type=\"NotEnoughFoo\"> details about failure </failure>\n");
+		fprintf(pFile, "    </testcase>\n");
+		fprintf(pFile, "    <testcase classname=\"c5.foo4\" name=\"MoreFailingTest\">\n");
+		fprintf(pFile, "        <failure type=\"Typo\"> This fails also, what a mess </failure>\n");
+		fprintf(pFile, "    </testcase>\n");
+		fprintf(pFile, "</testsuite>\n");
+		fprintf(pFile, "</testsuites>\n");
 		fclose(pFile);
 	}
 
