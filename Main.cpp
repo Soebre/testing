@@ -79,7 +79,7 @@ int main(int argc, char* argv[])
 		fprintf(pFile, "    <testcase name=\"TestRsaOnCertificate\" classname=\"generic/gncrypt.TestVerifyCertificate\" time=\"0.000\" />\n");
 		fprintf(pFile, "    <testcase name=\"TestVerifyCertificate\" classname=\"generic/gncrypt.TestVerifyCertificate\" time=\"0.000\" />\n");
 		fprintf(pFile, "  </testsuite>\n");
-		fprintf(pFile, "  <testsuite name=\"generic.TestPuff\" time=\"0.000\" tests=\"4\" failures=\"0\" errors=\"0\" skipped=\"0\">\n");
+		fprintf(pFile, "  <testsuite name=\"generic.TestPuff\" time=\"0.000\" tests=\"4\" failures=\"1\" errors=\"0\" skipped=\"0\">\n");
 		fprintf(pFile, "    <testcase name=\"TestDeflateInflate\" classname=\"generic/puff.TestPuff\" time=\"0.000\" />\n");
 		fprintf(pFile, "    <testcase name=\"TestPuff\" classname=\"generic/puff.TestPuff\" time=\"0.000\" />\n");
 		fprintf(pFile, "    <testcase name=\"TestPuffVector\" classname=\"generic/puff.TestPuff\" time=\"0.000\" />\n");
@@ -89,9 +89,9 @@ int main(int argc, char* argv[])
 		fprintf(pFile, "      ]]></failure>\n");
 		fprintf(pFile, "    </testcase>\n");
 		fprintf(pFile, "  </testsuite>\n");
-		fprintf(pFile, "  <testsuite name=\"c5.TestRsavp1\" time=\"0.000\" tests=\"1\" failures=\"0\" errors=\"0\" skipped=\"0\">\n");
+		fprintf(pFile, "  <testsuite name=\"c5.TestRsavp1\" time=\"0.000\" tests=\"1\" failures=\"1\" errors=\"0\" skipped=\"0\">\n");
 		fprintf(pFile, "    <testcase name=\"TestPublicKeySignature\" classname=\"c5.TestRsavp1\" time=\"0.000\" >\n");
-		fprintf(pFile, "      <failure name=\"Assertion failed\">\"false\" ../src/testrsavp1.c:70</failure>\n");
+		fprintf(pFile, "      <failure message=\"false\" type=\"Assertion failed\">../src/testrsavp1.c:70</failure>\n");
 		fprintf(pFile, "    </testcase>\n");
 		fprintf(pFile, "  </testsuite>\n");
 		fprintf(pFile, "  <testsuite name=\"c5.TestSha2\" time=\"0.000\" tests=\"2\" failures=\"0\" errors=\"0\" skipped=\"0\">\n");
