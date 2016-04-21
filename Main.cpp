@@ -5,6 +5,12 @@
 #include <time.h>
 
 
+int MasterFunction4()
+{
+	printf("Added fourth function in master branch\n");
+	return 0;
+}
+
 int MasterFunction3()
 {
 	printf("Added third function in master branch\n");
