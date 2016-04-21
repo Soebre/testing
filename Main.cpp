@@ -4,6 +4,14 @@
 #include <string.h>
 #include <time.h>
 
+int MasterFunction()
+{
+	printf("Added function in master branch\n");
+	return 0;
+}
+
+
+
 int main(int argc, char* argv[])
 {
 	printf("Hello Mathematics\n");
