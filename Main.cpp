@@ -29,6 +29,24 @@ int MasterFunction2()
 	return 0;
 }
 
+int Feature1()
+{
+	printf("Added function in feature branch\n");
+	return 0;
+}
+
+int Feature2()
+{
+	printf("Added second function in feature branch\n");
+	return 0;
+}
+
+int Feature3()
+{
+	printf("Added third function in feature branch\n");
+	return 0;
+}
+
 
 int main(int argc, char* argv[])
 {
