@@ -22,6 +22,12 @@ int Feature1()
 	return 0;
 }
 
+int Feature2()
+{
+	printf("Added second function in feature branch\n");
+	return 0;
+}
+
 
 int main(int argc, char* argv[])
 {
