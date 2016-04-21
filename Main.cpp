@@ -10,6 +10,11 @@ int MasterFunction()
 	return 0;
 }
 
+int MasterFunction2()
+{
+	printf("Added second function in master branch\n");
+	return 0;
+}
 
 
 int main(int argc, char* argv[])
