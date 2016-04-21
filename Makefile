@@ -17,5 +17,10 @@ Main.o: Main.cpp
 
 Regel:
 	echo $(MyDef) $$(MyDef2)
+	
+clean:
+	del *.o
+	del *.exe
+	
 
 
